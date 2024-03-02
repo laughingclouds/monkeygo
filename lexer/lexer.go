@@ -47,11 +47,7 @@ func (l *Lexer) readChar() {
 }
 
 /*
-NextToken doesn't really return the next token.
-It's checking what the current value of ch is and creating
-a token from that and returning it after calling readChar.
-It's because of this function call that we get the _next_ token
-in the next NextToken call.
+NextToken returns the current token and increments l.position.
 */
 func (l *Lexer) NextToken() token.Token {
 	var tok token.Token
