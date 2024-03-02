@@ -33,8 +33,15 @@ const (
 	INT   = "INT"   // 1, 123, 345
 
 	// Operators
-	ASSIGN = "="
-	PLUS   = "+"
+	ASSIGN   = "="
+	PLUS     = "+"
+	MINUS    = "-"
+	BANG     = "!"
+	ASTERISK = "*"
+	SLASH    = "/"
+
+	LT = "<"
+	GT = ">"
 
 	// Delimiters
 	COMMA     = ","
