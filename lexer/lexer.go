@@ -20,8 +20,7 @@ func New(input string) *Lexer {
 }
 
 /*
-peekChar is the same as readChar but it only reads and returns
-the byte, without incrementing l.position
+peekChar returns the byte at l.readPosition without incrementing l.position
 */
 func (l *Lexer) peekChar() byte {
 	if l.readPosition >= len(l.input) {
