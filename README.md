@@ -35,3 +35,21 @@ Take source code as input and output the tokens that represent the source code. 
 > In a production setting, it's common to attach file name and line number to the **Token**. I wonder if it's as easy as adding extra fields into the type declaration?
 
 As of now, the lexer will only support ASCII for simplicity's sake. We can add support for unicode later.
+
+## Parsing
+
+*Conversion of input into a data structure that represents the input*. [wikipedia](https://en.wikipedia.org/wiki/Parsing#Parser).
+A good example of a parser is the `JSON` parser in JavaScript.
+
+```js
+> var input = '{"name": "Hemant", "age":21}';
+> var output = JSON.parse(input);
+> output
+{name; 'Hemant', age: 21}
+> output.name
+'Hemant'
+> output.age
+21
+```
+
+A *string* `input` is taken by the parse and an *object* `output` is returned. The same happens with a parser for a programming language. But what we're representing in the data structure is the language itself.
