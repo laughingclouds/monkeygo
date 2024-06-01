@@ -30,42 +30,42 @@ func LookupIdent(ident string) TokenType {
 
 const (
 	// special identifiers
-	ILLEGAL = "ILLEGAL" // A token/character we don't know
-	EOF     = "EOF"     // end of file - parser to stop parsing from here
+	ILLEGAL TokenType = "ILLEGAL" // A token/character we don't know
+	EOF     TokenType = "EOF"     // end of file - parser to stop parsing from here
 
 	// Idenifiers + literals
-	IDENT = "IDENT" // add, foobar, x, y, ...
-	INT   = "INT"   // 1, 123, 345
+	IDENT TokenType = "IDENT" // add, foobar, x, y, ...
+	INT   TokenType = "INT"   // 1, 123, 345
 
 	// Operators
-	ASSIGN   = "="
-	PLUS     = "+"
-	MINUS    = "-"
-	BANG     = "!"
-	ASTERISK = "*"
-	SLASH    = "/"
+	ASSIGN   TokenType = "="
+	PLUS     TokenType = "+"
+	MINUS    TokenType = "-"
+	BANG     TokenType = "!"
+	ASTERISK TokenType = "*"
+	SLASH    TokenType = "/"
 
-	LT = "<"
-	GT = ">"
+	LT TokenType = "<"
+	GT TokenType = ">"
 
-	EQ     = "=="
-	NOT_EQ = "!="
+	EQ     TokenType = "=="
+	NOT_EQ TokenType = "!="
 
 	// Delimiters
-	COMMA     = ","
-	SEMICOLON = ";"
+	COMMA     TokenType = ","
+	SEMICOLON TokenType = ";"
 
-	LPAREN = "("
-	RPAREN = ")"
-	LBRACE = "{"
-	RBRACE = "}"
+	LPAREN TokenType = "("
+	RPAREN TokenType = ")"
+	LBRACE TokenType = "{"
+	RBRACE TokenType = "}"
 
 	// Keywords
-	FUNCTION = "FUNCTION"
-	LET      = "LET"
-	TRUE     = "TRUE"
-	FALSE    = "FALSE"
-	IF       = "IF"
-	ELSE     = "ELSE"
-	RETURN   = "RETURN"
+	FUNCTION TokenType = "FUNCTION"
+	LET      TokenType = "LET"
+	TRUE     TokenType = "TRUE"
+	FALSE    TokenType = "FALSE"
+	IF       TokenType = "IF"
+	ELSE     TokenType = "ELSE"
+	RETURN   TokenType = "RETURN"
 )
